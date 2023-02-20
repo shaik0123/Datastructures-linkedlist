@@ -65,6 +65,26 @@ public class LinkedListMethods<T> {
         tempNode.next = null;
         return tempNode.data;
     }
+
+    public void search (T key)
+    {
+        boolean keyFound = false;
+        Node<T> tempNode = head;
+        while(tempNode != null)
+        {
+            if(tempNode.data == key)
+            {
+                System.out.println("Key found");
+                keyFound = true;
+
+            }
+            tempNode = tempNode.next;
+        }
+        if(keyFound == false)
+        {
+            System.out.println("Key is not found");
+        }
+    }
     public String toString() {
         return "LinkedListMethods{" +
                 "head=" + head +

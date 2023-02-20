@@ -38,5 +38,8 @@ public class LinkedListMain {
         ll2.popLast();
         System.out.println(ll2);
 
+        System.out.println("Search for a node with key 30 in the linked list");
+        ll1.search(30);
+
     }
 }
