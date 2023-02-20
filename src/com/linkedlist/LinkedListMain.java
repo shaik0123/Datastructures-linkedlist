@@ -45,5 +45,10 @@ public class LinkedListMain {
         ll1.insertAfterNode(30,40);
         System.out.println(ll1);
 
+        System.out.println("Delete a node 40 from the linked list UC-9");
+        ll1.deleteNode(40);
+        System.out.println(ll1);
+        ll1.size();
+
     }
 }

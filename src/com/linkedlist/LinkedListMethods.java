@@ -98,6 +98,29 @@ public class LinkedListMethods<T> {
         newNode.next = tempNode.next;
         tempNode.next = newNode;
     }
+
+    public void deleteNode(T key)
+    {
+        Node<T> tempNode = head;
+        Node<T> prevNode = head;
+        while(tempNode.data != key)
+        {
+            prevNode = tempNode;
+            tempNode = tempNode.next;
+        }
+        prevNode.next = tempNode.next;
+    }
+    public void size()
+    {
+        Node<T> tempNode = head;
+        int count = 0;
+        while (tempNode != null)
+        {
+            count++;
+            tempNode = tempNode.next;
+        }
+        System.out.println("Size of the linked list is: "+count);
+    }
     public String toString() {
         return "LinkedListMethods{" +
                 "head=" + head +
