@@ -85,6 +85,19 @@ public class LinkedListMethods<T> {
             System.out.println("Key is not found");
         }
     }
+
+    public void insertAfterNode(T key,T data)
+    {
+        Node<T> newNode = new Node<T>(data);
+        newNode.data = data;
+        Node<T> tempNode = head;
+        while(tempNode.data != key)
+        {
+            tempNode = tempNode.next;
+        }
+        newNode.next = tempNode.next;
+        tempNode.next = newNode;
+    }
     public String toString() {
         return "LinkedListMethods{" +
                 "head=" + head +

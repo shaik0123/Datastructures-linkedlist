@@ -11,9 +11,9 @@ public class LinkedListMain {
 
         LinkedListMethods<Integer> ll1 = new LinkedListMethods<>();
         System.out.println("Create a linked list using add method UC-2");
-        ll1.add(70);
-        ll1.add(30);
         ll1.add(56);
+        ll1.add(30);
+        ll1.add(70);
         System.out.println(ll1);
 
         System.out.println("Create a linked list using append method UC-3");
@@ -38,8 +38,12 @@ public class LinkedListMain {
         ll2.popLast();
         System.out.println(ll2);
 
-        System.out.println("Search for a node with key 30 in the linked list");
+        System.out.println("Search for a node with key 30 in the linked list UC-7");
         ll1.search(30);
+
+        System.out.println("Insert a node 40 after 30 in the linked list UC-8");
+        ll1.insertAfterNode(30,40);
+        System.out.println(ll1);
 
     }
 }
