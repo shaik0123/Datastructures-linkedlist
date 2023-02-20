@@ -17,6 +17,24 @@ public class LinkedListMethods<T> {
         temp.next = node;
 
     }
+
+    public void append(T data)
+    {
+        Node<T> newNode = new Node<T>(data);
+        if(head == null)
+        {
+            head = newNode;
+        }
+        else
+        {
+            Node<T> tempNode = head;
+            while(tempNode.next != null)
+            {
+                tempNode = tempNode.next;
+            }
+            tempNode.next = newNode;
+        }
+    }
     public String toString() {
         return "LinkedListMethods{" +
                 "head=" + head +

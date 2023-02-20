@@ -15,5 +15,12 @@ public class LinkedListMain {
         ll1.add(30);
         ll1.add(56);
         System.out.println(ll1);
+
+        System.out.println("Create a linked list using append method UC-3");
+        LinkedListMethods<Integer> ll2 = new LinkedListMethods<>();
+        ll2.append(56);
+        ll2.append(30);
+        ll2.append(70);
+        System.out.println(ll2);
     }
 }
