@@ -30,5 +30,9 @@ public class LinkedListMain {
         ll3.insertAfter(ll3.head,30);
         System.out.println(ll3);
 
+        System.out.println("Delete the first element in the linked list UC-5");
+        ll3.pop();
+        System.out.println(ll3);
+
     }
 }
