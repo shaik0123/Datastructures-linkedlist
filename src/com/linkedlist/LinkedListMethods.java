@@ -17,5 +17,11 @@ public class LinkedListMethods<T> {
         temp.next = node;
 
     }
+    public String toString() {
+        return "LinkedListMethods{" +
+                "head=" + head +
+                ", temp=" + temp +
+                '}';
+    }
 
 }

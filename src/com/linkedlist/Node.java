@@ -1,6 +1,6 @@
 package com.linkedlist;
 
-public class Node<T> {
+public class Node<T>{
     T data;
     Node next;
 
