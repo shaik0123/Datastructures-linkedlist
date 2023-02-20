@@ -54,6 +54,17 @@ public class LinkedListMethods<T> {
         head = head.next;
         return tempNode.data;
     }
+
+    public T popLast()
+    {
+        Node<T> tempNode = head;
+        while(tempNode.next.next != null)
+        {
+            tempNode = tempNode.next;
+        }
+        tempNode.next = null;
+        return tempNode.data;
+    }
     public String toString() {
         return "LinkedListMethods{" +
                 "head=" + head +

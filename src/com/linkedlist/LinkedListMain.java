@@ -34,5 +34,9 @@ public class LinkedListMain {
         ll3.pop();
         System.out.println(ll3);
 
+        System.out.println("Delete the last element in the linked list UC-6");
+        ll2.popLast();
+        System.out.println(ll2);
+
     }
 }
