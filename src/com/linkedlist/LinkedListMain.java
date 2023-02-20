@@ -22,5 +22,13 @@ public class LinkedListMain {
         ll2.append(30);
         ll2.append(70);
         System.out.println(ll2);
+
+        System.out.println("Insert a node 30 between 56 and 70 UC-4");
+        LinkedListMethods<Integer>ll3 = new LinkedListMethods<>();
+        ll3.append(56);
+        ll3.append(70);
+        ll3.insertAfter(ll3.head,30);
+        System.out.println(ll3);
+
     }
 }

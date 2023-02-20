@@ -35,6 +35,14 @@ public class LinkedListMethods<T> {
             tempNode.next = newNode;
         }
     }
+
+    public void insertAfter(Node<T> prevNode, T data)
+    {
+        Node <T> newNode = new Node<T>(data);
+        newNode.data = data;
+        newNode.next = prevNode.next;
+        prevNode.next = newNode;
+    }
     public String toString() {
         return "LinkedListMethods{" +
                 "head=" + head +
